@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Belajar Binatang Bersama</title>
+        <!-- ikon di atas-->
+		<link rel="icon" type="image/x-icon" href="assets/img/avataaars.png"/>
+		<!-- CSS-->
+		<link href="css/style.css" rel="stylesheet" />
+		<link href="js/bootstrap.min.css" rel="stylesheet">	
+		<link rel="stylesheet" href="css/stylesidebar.css">
+		<link href="https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap" rel="stylesheet">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+
+    </head>
+    <body background="assets/img/background/bg home.png">
+		<div class="col-sm-2 sidenav hidden-xs">
+	  	<input type="checkbox" id="check">
+			<label for="check">
+				<i class="fas fa-bars" id="btn"><img src="assets/img/ikon/sidebar.png" height="30" width="30" alt="Avatar"></i>
+				<i class="fa fa-arrow-right" id="open"><img src="assets/img/ikon/sidebar.png" height="30" width="30" alt="Avatar"></i>
+			</label>
+
+		<div class="sidebar" style="padding-left:20px;">
+			<br>
+			<h6 align="center"> <img src="assets/img/avataars.png" class="img-circle" height="90px" width="90px" alt="Avatar"></h6>
+			<ul class="nav nav-pills nav-stacked">
+				<li class="pageaktif buttonutama"><a href="home.html">Home</a></li>
+				<li class="buttonutama"><a href="TujuanPembelajaran.html">KI & KD</a></li>
+				<li class="buttonutama"><a href="Tempat Hidup.html">Materi</a></li>
+				<li class="isimateri">Darat</li>
+					<div class="tutupisimateri nav-stacked">
+						<li class="buttonsidebar"><a href="Materi ayam.html">Ayam</a></li>
+						<li class="buttonsidebar"><a href="Materi sapi.html">Sapi</a></li>
+						<li class="buttonsidebar"><a href="Materi kucing.html">Kucing</a></li>
+						<li class="buttonsidebar"><a href="Materi anjing.html">Anjing</a></li>
+					</div>
+				<li class="isimateri">Air</li>
+					<div class="tutupisimateri nav-stacked">
+						<li class="buttonsidebar"><a href="Materi ikan.html">Ikan</a></li>
+						<li class="buttonsidebar"><a href="Materi paus.html">Paus</a></li>
+						<li class="buttonsidebar"><a href="Materi lumba-lumba.html">Lumba-lumba</a></li>
+						<li class="buttonsidebar"><a href="Materi hiu.html">Hiu</a></li>
+					</div>
+				<li class="isimateri">Udara</li>
+					<div class="tutupisimateri nav-stacked">
+						<li class="buttonsidebar"><a href="Materi kupu2.html">Kupu-kupu</a></li>
+						<li class="buttonsidebar"><a href="Materi lebah.html">Lebah</a></li>
+						<li class="buttonsidebar"><a href="Materi capung.html">Capung</a></li>
+						<li class="buttonsidebar"><a href="Materi burung.html">Burung</a></li>
+					</div>
+				<li class="buttonutama"><a href="info.html">Info</a></li>
+			</ul>
+		</div>
+    </div>
+	
+	<script>
+		var acc = document.getElementsByClassName("isimateri");
+		var i;
+		for (i = 0; i < acc.length; i++) {
+			acc[i].addEventListener("click", function() {
+				this.classList.toggle("active");
+				var panel = this.nextElementSibling;
+				if (panel.style.display === "block") {
+					panel.style.display = "none";
+				} else {
+					panel.style.display = "block";
+				}
+			});
+		}
+		
+		function play(){
+				var audio = new Audio ('assets/audio/paus.mp3');
+				audio.play();
+			};
+	</script>
+		
+        <table>
+			<tr>
+				<td class="binatanghome" rowspan="2">
+					<a href="Materi paus.html">
+						<img src="assets/img/binatang/home_paus.png" width="810px" alt="" />
+					</a>
+				</td>
+	
+				<td class="mulaihome" align="right" valign="bottom">
+					<img src="assets/img/ikon/mulai_home.png" onclick='play();' width="350px" height="519px">
+				</td>
+			</tr>
+		</table>
+	
+    </body>
+</html>

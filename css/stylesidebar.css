@@ -1,0 +1,138 @@
+.sidebar ul a{
+	transition: all 1s ease;
+}
+
+.sidebar {
+    position: fixed;
+    transition: all 0.5s ease;
+	background: rgba(255, 255, 255, 0.1);
+	box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+	height:95%;
+	width:15%;
+	padding-right:20px;
+	overflow-y: scroll;
+	overflow: hidden;
+}
+
+;;-webkit-scrollbar{
+	width: 2px;
+}
+
+;;-webkit-scrollbar-track{
+	background: transparent !important;
+}
+
+;;-webkit-scrollbar-thumb{
+	background: blue;
+	color: red;
+	border-radius: 10px;
+}
+
+ul li:hover a {
+    padding-left: 40px;
+}
+
+#check {
+    display: none;
+}
+
+label #btn {
+    position: absolute;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+label #open {
+    position: absolute;
+    cursor: pointer;
+    border-radius: 1px;
+    font-size: 30px;
+}
+
+label #open {
+    left: -50px;
+    top: 10;
+    padding: 6px 12px;
+    transition: all 0s ease;
+}
+
+label #btn {
+    z-index: 1111;
+    left: 170px;
+    top: 15px;
+    font-size: 20px;
+    color: #000000;
+    padding: 9px 9px;
+    transition: all 0s ease;
+}
+
+#check:checked~.sidebar {
+    left:-250px;
+}
+
+#check:checked~label #open {
+    left:30px;
+    font-size: 20px;
+}
+
+#check:checked~label #btn {
+    left:-195px;
+}
+
+.buttonutama {
+	background-color: RGBA(115, 245, 150);
+	color: black;
+	cursor: pointer;
+	padding: 10px;
+	width: 100%;
+	border: 1px solid RoyalBlue;
+	text-align: left;
+	outline: none;
+	font-size: 15px;
+	transition: 0.4s;
+}
+
+.activ, .buttonutama:hover {
+	background-color: white; 
+}
+
+.isimateri {
+	background-color: RGBA(146, 224, 242);
+	color: black;
+	cursor: pointer;
+	padding: 10px;
+	width: 100%;
+	border: 1px solid RoyalBlue;
+	text-align: left;
+	outline: none;
+	font-size: 15px;
+	transition: 0.4s;
+}
+
+.activ, .isimateri:hover {
+	background-color: white; 
+}
+
+.pageaktif{
+	background-color: RGBA(200, 175, 130); 
+}
+
+.tutupisimateri {
+	color: black;
+	padding: 0 25px;
+	display: none;
+	overflow: hidden;
+}
+			
+.buttonsidebar {
+	padding: 10px;
+	border: 1px solid RoyalBlue;
+	color: black;
+	background-color: RGBA(205, 200, 250);
+}
+			
+.btnsidebar {
+	border: 1px solid RoyalBlue;
+	color: black;
+	background-color: RGBA(140, 250, 225);
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Belajar Binatang Bersama</title>
+        <!-- ikon di atas-->
+        <link rel="icon" type="image/x-icon" href="assets/img/avataaars.png"/>
+        <!-- CSS-->
+		<link href="css/style.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/stylesidebar.css">
+		<link href="js/bootstrap.min.css" rel="stylesheet">	
+
+    </head>
+    <body background="assets/img/bgindex.png">
+	
+	<div class="col-sm-2 sidenav hidden-xs">
+	  	<input type="checkbox" id="check">
+			<label for="check">
+				<i class="fas fa-bars" id="btn"><img src="assets/img/ikon/sidebar.png" height="30" width="30" alt="Avatar"></i>
+				<i class="fa fa-arrow-right" id="open"><img src="assets/img/ikon/sidebar.png" height="30" width="30" alt="Avatar"></i>
+			</label>
+
+		<div class="sidebar" style="padding-left:20px;">
+			<br>
+			<h6 align="center"> <img src="assets/img/avataars.png" class="img-circle" height="90px" width="90px" alt="Avatar"></h6>
+			<ul class="nav nav-pills nav-stacked">
+				<li class="pageaktif buttonutama"><a href="home.html">Home</a></li>
+				<li class="buttonutama"><a href="TujuanPembelajaran.html">KI & KD</a></li>
+				<li class="buttonutama"><a href="Tempat Hidup.html">Materi</a></li>
+				<li class="isimateri">Darat</li>
+					<div class="tutupisimateri nav-stacked">
+						<li class="buttonsidebar"><a href="Materi ayam.html">Ayam</a></li>
+						<li class="buttonsidebar"><a href="Materi sapi.html">Sapi</a></li>
+						<li class="buttonsidebar"><a href="Materi kucing.html">Kucing</a></li>
+						<li class="buttonsidebar"><a href="Materi anjing.html">Anjing</a></li>
+					</div>
+				<li class="isimateri">Air</li>
+					<div class="tutupisimateri nav-stacked">
+						<li class="buttonsidebar"><a href="Materi ikan.html">Ikan</a></li>
+						<li class="buttonsidebar"><a href="Materi paus.html">Paus</a></li>
+						<li class="buttonsidebar"><a href="Materi lumba-lumba.html">Lumba-lumba</a></li>
+						<li class="buttonsidebar"><a href="Materi hiu.html">Hiu</a></li>
+					</div>
+				<li class="isimateri">Udara</li>
+					<div class="tutupisimateri nav-stacked">
+						<li class="buttonsidebar"><a href="Materi kupu2.html">Kupu-kupu</a></li>
+						<li class="buttonsidebar"><a href="Materi lebah.html">Lebah</a></li>
+						<li class="buttonsidebar"><a href="Materi capung.html">Capung</a></li>
+						<li class="buttonsidebar"><a href="Materi burung.html">Burung</a></li>
+					</div>
+				<li class="buttonutama"><a href="info.html">Info</a></li>
+			</ul>
+		</div>
+    </div>
+	
+	<script>
+		var acc = document.getElementsByClassName("isimateri");
+		var i;
+		for (i = 0; i < acc.length; i++) {
+			acc[i].addEventListener("click", function() {
+				this.classList.toggle("active");
+				var panel = this.nextElementSibling;
+				if (panel.style.display === "block") {
+					panel.style.display = "none";
+				} else {
+					panel.style.display = "block";
+				}
+			});
+		}
+	</script>
+	
+		<h1 align="center">Menentukkan Binatang Besar dan Kecil</h1>
+		<div class="borderLatihan">
+			<div align="left" style="margin-left:30px; margin-right:30px">
+				<h4>1. Disediakan 5 binatang dan 2 kotak bertuliskan "Besar" dan "Kecil"</h4>
+				<h4>2. Tarik satu gambar binatang menuju kotak yang tepat berdasarkan bentuk besar atau kecil</h4>
+				<h4>3. Hasil benar atau salah akan tertampil</h4>
+				<h4>4. Apabila hasil salah, gambar binatang akan kembali ke tempat semula sampai memilih kotak yang tepat</h4>
+			</div>
+			<div align="center">
+				<a href="Latihan Air 2.html">
+					<button class="buttonMulai Mulai">
+						<img src="assets/img/ikon/mulai.png" width="200px" height="150px"><br>
+					</button>
+				</a><br><br>
+			</div>
+		</div>
+		
+		<br>
+		<div align="center">
+			<a href="Daftar Materi Air.html">
+				<button class="buttonSebelumLatihan">&laquo;</button>
+			</a>
+			<a href="latihan Air 2.html">
+				<button class="buttonSesudahLatihan">&raquo;</button>
+			</a>
+		</div>
+
+    </body>
+</html>

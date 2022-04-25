@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title> Belajar Binatang Bersama </title>
+		<!-- ikon di atas-->
+		<link rel="icon" type="image/x-icon" href="assets/img/avataaars.png"/>
+		<!-- CSS-->
+		<link href="css/style.css" rel="stylesheet" />
+		<link href="js/bootstrap.min.css" rel="stylesheet">
+<!--		<link href="assets/slide/css/bootstrap.min1.css" rel="stylesheet"><!-- cuman buat ngukur ukuran gambar -->
+<!--		<link href="assets/slide/css/bootstrap.min2.css" rel="stylesheet"><!-- gak ukuran foto -->
+		<link href="assets/slide/css/glightbox.min.css" rel="stylesheet"><!-- memperbesasr -->
+		<link href="assets/slide/css/style1.css" rel="stylesheet">
+		<link href="assets/slide/css/style2.css" rel="stylesheet"> <!-- gak mempengaruhi memperbesar -->
+		
+		<link rel="stylesheet" href="css/stylesidebar.css">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body style="background:#1abc9c">
+
+	<div class="col-sm-2 sidenav hidden-xs">
+	  	<input type="checkbox" id="check">
+			<label for="check">
+				<i class="fas fa-bars" id="btn"><img src="assets/img/ikon/sidebar.png" height="30" width="30" alt="Avatar"></i>
+				<i class="fa fa-arrow-right" id="open"><img src="assets/img/ikon/sidebar.png" height="30" width="30" alt="Avatar"></i>
+			</label>
+
+		<div class="sidebar" style="padding-left:20px;">
+			<br>
+			<h6 align="center"> <img src="assets/img/avataars.png" class="img-circle" height="90px" width="90px" alt="Avatar"></h6>
+			<ul class="nav nav-pills nav-stacked">
+				<li class="pageaktif buttonutama"><a href="home.html">Home</a></li>
+				<li class="buttonutama"><a href="TujuanPembelajaran.html">KI & KD</a></li>
+				<li class="buttonutama"><a href="Tempat Hidup.html">Materi</a></li>
+				<li class="isimateri">Darat</li>
+					<div class="tutupisimateri nav-stacked">
+						<li class="buttonsidebar"><a href="Materi ayam.html">Ayam</a></li>
+						<li class="buttonsidebar"><a href="Materi sapi.html">Sapi</a></li>
+						<li class="buttonsidebar"><a href="Materi kucing.html">Kucing</a></li>
+						<li class="buttonsidebar"><a href="Materi anjing.html">Anjing</a></li>
+					</div>
+				<li class="isimateri">Air</li>
+					<div class="tutupisimateri nav-stacked">
+						<li class="buttonsidebar"><a href="Materi ikan.html">Ikan</a></li>
+						<li class="buttonsidebar"><a href="Materi paus.html">Paus</a></li>
+						<li class="buttonsidebar"><a href="Materi lumba-lumba.html">Lumba-lumba</a></li>
+						<li class="buttonsidebar"><a href="Materi hiu.html">Hiu</a></li>
+					</div>
+				<li class="isimateri">Udara</li>
+					<div class="tutupisimateri nav-stacked">
+						<li class="buttonsidebar"><a href="Materi kupu2.html">Kupu-kupu</a></li>
+						<li class="buttonsidebar"><a href="Materi lebah.html">Lebah</a></li>
+						<li class="buttonsidebar"><a href="Materi capung.html">Capung</a></li>
+						<li class="buttonsidebar"><a href="Materi burung.html">Burung</a></li>
+					</div>
+				<li class="buttonutama"><a href="info.html">Info</a></li>
+			</ul>
+		</div>
+    </div>
+	
+	<script>
+		var acc = document.getElementsByClassName("isimateri");
+		var i;
+		for (i = 0; i < acc.length; i++) {
+			acc[i].addEventListener("click", function() {
+				this.classList.toggle("activ");
+				var panel = this.nextElementSibling;
+				if (panel.style.display === "block") {
+					panel.style.display = "none";
+				} else {
+					panel.style.display = "block";
+				}
+			});
+		}
+	</script>
+
+  <main id="main">
+
+   <!-- ======= Tabs Section - Bagian button atas ======= -->
+    <section id="tabs" class="tabs">
+      <div class="container" data-aos="fade-up">
+
+        <ul class="nav nav-tabs row d-flex">
+          <li class="nav-item col-3">
+            <a class="nav-link" href="home.html">
+              <i><img src="assets/img/ikon/home.png" width="55px" height="50px">
+			  <h6>Beranda</h6>
+			  </i>
+            </a>
+          </li>
+		  <li class="nav-item col-3">
+            <a class="nav-link active show" data-toggle="tab" href="#tab-1">
+              <i>
+				<img src="assets/img/binatang/anjing.png" width="80px" height="50px">
+				<h6>Pengenalan</h6>
+			  </i><br>
+			  
+            </a>
+          </li>
+          <li class="nav-item col-3">
+            <a class="nav-link" data-toggle="tab" href="#tab-2">
+              <i>
+				<img src="assets/img/ikon/angka huruf darat.png" width="70px" height="50px">
+				<h6>Huruf</h6>
+			  </i>
+            </a>
+          </li>
+          <li class="nav-item col-3">
+            <a class="nav-link" data-toggle="tab" href="#tab-3">
+              <i>
+				<img src="assets/img/ikon/tempat tinggal.png" width="50px" height="50px">
+				<h6>Tempat Tinggal</h6>
+			  </i>
+            </a>
+          </li>
+          <li class="nav-item col-3">
+            <a class="nav-link" data-toggle="tab" href="#tab-4">
+              <i>
+				<img src="assets/img/ikon/makanan.png" width="70px" height="50px">
+				<h6>Makanan</h6>
+			  </i>
+            </a>
+          </li>
+		  <li class="nav-item col-3">
+            <a class="nav-link" data-toggle="tab" href="#tab-5">
+              <i>
+				<img src="assets/img/ikon/manfaat.png" width="50px" height="50px">
+				<h6>Manfaat</h6>
+			  </i>
+            </a>
+          </li>
+		  <li class="nav-item col-3">
+            <a class="nav-link" data-toggle="tab" href="#tab-6">
+              <i>
+				<img src="assets/img/ikon/berkembang biak.png" width="80px" height="50px">
+				<h6>Daur Hidup</h6>
+			  </i>
+            </a>
+          </li>
+        </ul>
+		
+        <div class="tab-content">
+		
+		<!-- ======= Materi Pengenalan======= -->
+          <div class="tab-pane active show" id="tab-1">
+            <div class="row bordermateri">
+              <div class="col-lg-12  text-center" data-aos="fade-up" data-aos-delay="200">
+                <p><br>
+					<iframe width="640" height="395" src="https://www.youtube.com/embed/0hdzCIeL1YE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<br>
+				</p>
+			  </div>
+            </div>
+          </div>
+		  
+		<!-- ======= Materi Bentuk Tubuh ======= -->
+		<div class="tab-pane" id="tab-2">
+		<div align="center" class="bordermateri">
+			
+			<!-- ======= button huruf angka ======= -->
+			<div>
+				<button class="huruf_angka tablinks" style="background-color:pink;" onclick="belajarhurufangka(event, 'huruf')"><b>Huruf</b></button>
+				<button class="huruf_angka tablinks" style="background-color:#FFF98C;" onclick="belajarhurufangka(event, 'angka')"><b>Angka</b></button>
+			</div>
+			
+			<!-- ======= isi huruf angka ======= -->
+			<div id="huruf" class="tabcontent">
+				<div align="center">
+					<h1 style="font-family:Comic Sans MS">Mengenal Huruf</h1> 
+					<div class="kotak_bagian3"><br>
+						<button class="button_abc huruf1">a</button>
+						<button class="button_abc huruf2">n</button>
+						<button class="button_abc huruf1">j</button>
+						<button class="button_abc huruf2">i</button> 
+						<button class="button_abc huruf1">n</button>
+						<button class="button_abc huruf2">g</button> 
+					</div>
+			
+					<br>
+					<div valign="center" align="center" class="kotak_bagian1"> <br>
+						<button class="button_abc kata">anjing</button>					
+					</div>
+				</div>
+			</div>
+			
+			<div id="angka" class="tabcontent">
+				<div align="left">
+					<h1 align="center" style="font-family:Comic Sans MS; color:black;">Mengenal Angka</h1>
+					<table>
+						<td width="150"> 
+							<button class="button_123 huruf anjing_123 link_anjing angka_123 belajar_angka" onclick="belajar_angka(event, 'angka1'); angka_anjing(event, 'anjing1');" style="background-color: RGB(23,47,223);">16</button> <br><br>
+							<button class="button_123 huruf anjing_123 link_anjing angka_123 belajar_angka" onclick="belajar_angka(event, 'angka2'); angka_anjing(event, 'anjing2');" style="background-color: RGB(197,90,17);">17</button> <br><br>
+							<button class="button_123 huruf anjing_123 link_anjing angka_123 belajar_angka" onclick="belajar_angka(event, 'angka3'); angka_anjing(event, 'anjing3');" style="background-color: RGB(237,89,241);">18</button> <br><br>
+							<button class="button_123 huruf anjing_123 link_anjing angka_123 belajar_angka" onclick="belajar_angka(event, 'angka4'); angka_anjing(event, 'anjing4');" style="background-color: RGB(80,181,29);">19</button> <br><br>
+							<button class="button_123 huruf anjing_123 link_anjing angka_123 belajar_angka" onclick="belajar_angka(event, 'angka5'); angka_anjing(event, 'anjing5');" style="background-color: RGB(240,21,16);">20</button> <br>
+						</td>
+						<td width="300">
+							<div id="angka1" class="konten_angka tabcontent">
+								<img src="assets/img/angka/nomor/16.png" width="300px" height="300px"> 
+							</div>
+							<div id="angka2" class="konten_angka tabcontent">
+								<img src="assets/img/angka/nomor/17.png" width="300px" height="300px"> 
+							</div>
+							<div id="angka3" class="konten_angka tabcontent">
+								<img src="assets/img/angka/nomor/18.png" width="300px" height="300px"> 
+							</div>
+							<div id="angka4" class="konten_angka tabcontent">
+								<img src="assets/img/angka/nomor/19.png" width="300px" height="300px"> 
+							</div>
+							<div id="angka5" class="konten_angka tabcontent">
+								<img src="assets/img/angka/nomor/20.png" width="300px" height="300px"> 
+							</div>
+						</td>
+						<td width="300">  
+							<div id="anjing1" class="konten_anjing tabcontent">
+								<img src="assets/img/angka/anjing/anjing16.png" width="500px" height="350px"> 
+							</div>
+							<div id="anjing2" class="konten_anjing tabcontent">
+								<img src="assets/img/angka/anjing/anjing17.png" width="600px" height="350px"> 
+							</div>
+							<div id="anjing3" class="konten_anjing tabcontent">
+								<img src="assets/img/angka/anjing/anjing18.png" width="600px" height="350px"> 
+							</div>
+							<div id="anjing4" class="konten_anjing tabcontent">
+								<img src="assets/img/angka/anjing/anjing19.png" width="600px" height="350px"> 
+							</div>
+							<div id="anjing5" class="konten_anjing tabcontent">
+								<img src="assets/img/angka/anjing/anjing20.png" width="600px" height="370px"> 
+							</div>
+						</td>
+					</table>
+				</div>
+			</div>
+
+				
+		</div>		
+        </div>
+		  
+		  <!-- ======= Materi Tempat Tinggal ======= -->
+          <div class="tab-pane" id="tab-3">
+            <div class="row bordermateri">
+              <div class="col-lg-12  text-center" data-aos="fade-up" data-aos-delay="200">
+				<p><br>
+					<iframe width="640" height="395" src="https://www.youtube.com/embed/AAX526h3QxI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</p>
+			  </div>
+            </div>
+          </div>
+		  
+		  <!-- ======= Materi Makanan======= -->
+          <div class="tab-pane" id="tab-4">
+			<div class="row bordermateri">
+				<div class="col-lg-12  text-center" data-aos="fade-up" data-aos-delay="200">
+					<p><br>
+						<iframe width="640" height="395" src="https://www.youtube.com/embed/SVHV1UJHPJM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</p>
+				</div>
+			</div>
+          </div>
+		  
+		  <!-- ======= Materi Manfaat ======= -->
+		  <div class="tab-pane" id="tab-5">
+			<section id="portfolio" class="portfolio">
+			<div class="row bordermateri">
+				<div class="col-lg-12  text-center" data-aos="fade-up" data-aos-delay="200">
+					<p><br>
+						<iframe width="640" height="395" src="https://www.youtube.com/embed/476XKypPsE4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</p>
+				</div>
+			</div>
+			</section>
+		  </div>
+		  
+		  <!-- ======= Materi Berkembang Biak ======= -->
+		  <div class="tab-pane" id="tab-6">
+            <div class="row bordermateri">
+              <div class="col-lg-12  text-center" data-aos="fade-up" data-aos-delay="200">
+                <p><br>
+					<iframe width="640" height="395" src="https://www.youtube.com/embed/VN4w0_X62FU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</p>
+			  </div>
+            </div>
+          </div>
+		  
+		  
+		  <!-- ======= Javascript anjing ======= -->
+		  <script>
+		function belajarhurufangka(evt, huruf_angka) {
+			var i, tabcontent, tablinks;
+					
+			tabcontent = document.getElementsByClassName("tabcontent");
+			for (i = 0; i < tabcontent.length; i++) {
+				tabcontent[i].style.display = "none";
+			}
+			
+			tablinks = document.getElementsByClassName("tablinks");
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" active", "");
+			}
+			document.getElementById(huruf_angka).style.display = "block";
+			evt.currentTarget.className += " active";
+		}
+		
+		function angka_anjing(evt, anjing_123) {
+			var a, konten_anjing, link_anjing;
+					
+			konten_anjing = document.getElementsByClassName("konten_anjing");
+			for (i = 0; i < konten_anjing.length; i++) {
+				konten_anjing[i].style.display = "none";
+			}
+			
+			link_anjing = document.getElementsByClassName("link_anjing");
+			for (i = 0; i < link_anjing.length; i++) {
+				link_anjing[i].className = link_anjing[i].className.replace(" active", "");
+			}
+			document.getElementById(anjing_123).style.display = "block";
+			evt.currentTarget.className += " active";
+		}
+		
+		function belajar_angka(evt, angka_123) {
+			var b, konten_angka, link_angka;
+					
+			konten_angka = document.getElementsByClassName("konten_angka");
+			for (i = 0; i < konten_angka.length; i++) {
+				konten_angka[i].style.display = "none";
+			}
+			
+			link_angka = document.getElementsByClassName("link_angka");
+			for (i = 0; i < link_angka.length; i++) {
+				link_angka[i].className = link_angka[i].className.replace(" active", "");
+			}
+			document.getElementById(angka_123).style.display = "block";
+			evt.currentTarget.className += " active";
+		}
+
+			function play(){
+				var audio = new Audio ('Suara/Naruto.mp3');
+				audio.play();
+			};
+		
+			
+			<!-- ======= Javascript Bagian anjing ======= -->
+		  	function bagian_kepala(){
+				document.getElementById("label1").innerHTML='<img src=assets/img/bagian/kepala.png width="500" height="500">';
+			}
+			function bagian_tanduk(){
+				document.getElementById("label1").innerHTML='<img src=assets/img/bagian/tanduk.png width="500" height="500">';
+			}
+			function bagian_mata(){
+				document.getElementById("label1").innerHTML='<img src=assets/img/bagian/mata.png width="500" height="500">';
+			}
+			function bagian_mulut(){
+				document.getElementById("label1").innerHTML='<img src=assets/img/bagian/mulut.png width="500" height="500">';
+			}
+			function bagian_telinga(){
+				document.getElementById("label1").innerHTML='<img src=assets/img/bagian/telinga.png width="500" height="500">';
+			}
+			function bagian_badan(){
+				document.getElementById("label1").innerHTML='<img src=assets/img/bagian/badan.png width="500" height="500">';
+			}
+			function bagian_puting(){
+				document.getElementById("label1").innerHTML='<img src=assets/img/bagian/puting.png width="500" height="500">';
+			}
+			function bagian_ekor(){
+				document.getElementById("label1").innerHTML='<img src=assets/img/bagian/ekor.png width="500" height="500">';
+			}
+			
+			function bagian_ekor(){
+				document.getElementById("label1").innerHTML='<img src=assets/img/bagian/ekor.png width="500" height="500">';
+			}
+			function bagian_hidung(){
+				document.getElementById("label1").innerHTML='<img src=assets/img/bagian/hidung.png width="500" height="500">';
+			}
+			
+			
+			function kepala(){
+				document.getElementById("label2").innerHTML='<img src=assets/img/bagian/pkepala.png width="500" height="450">';
+			}
+			function tanduk(){
+				document.getElementById("label2").innerHTML='<img src=assets/img/bagian/ptanduk.png width="500" height="450">';
+			}
+			function mata(){
+				document.getElementById("label2").innerHTML='<img src=assets/img/bagian/pmata.png width="500" height="450">';
+			}
+			function mulut(){
+				document.getElementById("label2").innerHTML='<img src=assets/img/bagian/pmulut.png width="500" height="450">';
+			}
+			function telinga(){
+				document.getElementById("label2").innerHTML='<img src=assets/img/bagian/ptelinga.png width="500" height="450">';
+			}
+			function badan(){
+				document.getElementById("label2").innerHTML='<img src=assets/img/bagian/pbadan.png width="500" height="450">';
+			}
+			function puting(){
+				document.getElementById("label2").innerHTML='<img src=assets/img/bagian/pputing.png width="500" height="450">';
+			}
+			function ekor(){
+				document.getElementById("label2").innerHTML='<img src=assets/img/bagian/pekor.png width="500" height="450">';
+			}
+			
+			function ekor(){
+				document.getElementById("label2").innerHTML='<img src=assets/img/bagian/pekor.png width="500" height="450">';
+			}
+			function hidung(){
+				document.getElementById("label2").innerHTML='<img src=assets/img/bagian/phidung.png width="500" height="450">';
+			}
+		  
+		  <!-- ======= Akhir Bagian anjing ======= -->
+		  </script>
+		  
+        </div>
+      </div>
+	  
+	  <br>
+	  <div>
+			<p class="marginbutton">
+			<a href="home.html"><button class="buttonSebelumMateri">&laquo;</button></a>
+			<a href="Latihan Binatang Darat 2.html"><button class="buttonLatihan">Bermain</button></a>
+			<a href="Tempat Hidup.html"><button class="buttonSesudahMateri">&raquo;</button></a> 
+			</p>
+		</div>
+    </section><!-- End Tabs Section -->
+
+
+  </main><!-- End #main -->
+
+  		<!-- JS Files -->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.bundle.min.js"></script>
+		<script src="assets/slide/js/isotope.pkgd.min.js"></script>
+		<script src="assets/slide/js/glightbox.min.js"></script>
+		<script src="assets/slide/js/swiper-bundle.min2.js"></script>
+		<script src="assets/slide/js/main.js"></script>
+		<script src="assets/slide/js/main1.js"></script>
+</body>
+
+</html>
