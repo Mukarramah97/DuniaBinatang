@@ -10,23 +10,21 @@
 	height:95%;
 	width:15%;
 	padding-right:20px;
-	overflow-y: scroll;
-	overflow: hidden;
+	overflow-y: auto;
 }
 
-;;-webkit-scrollbar{
-	width: 2px;
+::-webkit-scrollbar {
+  width: 7px;
 }
 
-;;-webkit-scrollbar-track{
-	background: transparent !important;
+::-webkit-scrollbar-track {
+  background-color: #ddd;
 }
 
-;;-webkit-scrollbar-thumb{
-	background: blue;
-	color: red;
-	border-radius: 10px;
+::-webkit-scrollbar-thumb {
+  background-color: gray;
 }
+
 
 ul li:hover a {
     padding-left: 40px;
@@ -80,12 +78,12 @@ label #btn {
 }
 
 .buttonutama {
-	background-color: RGBA(115, 245, 150);
+	background-color: #FDD7AA;
 	color: black;
 	cursor: pointer;
 	padding: 10px;
 	width: 100%;
-	border: 1px solid RoyalBlue;
+	border: 1px solid #AD8B73;
 	text-align: left;
 	outline: none;
 	font-size: 15px;
@@ -97,12 +95,12 @@ label #btn {
 }
 
 .isimateri {
-	background-color: RGBA(146, 224, 242);
+	background-color: #F4BBBB;
 	color: black;
 	cursor: pointer;
 	padding: 10px;
 	width: 100%;
-	border: 1px solid RoyalBlue;
+	border: 1px solid #AD8B73;
 	text-align: left;
 	outline: none;
 	font-size: 15px;
@@ -114,7 +112,7 @@ label #btn {
 }
 
 .pageaktif{
-	background-color: RGBA(200, 175, 130); 
+	background-color: #CEAB93; 
 }
 
 .tutupisimateri {
@@ -126,13 +124,34 @@ label #btn {
 			
 .buttonsidebar {
 	padding: 10px;
-	border: 1px solid RoyalBlue;
+	border: 1px solid #AD8B73;
 	color: black;
-	background-color: RGBA(205, 200, 250);
+	background-color: #C2B8A3;
 }
 			
 .btnsidebar {
-	border: 1px solid RoyalBlue;
+	border: 1px solid #AD8B73;
 	color: black;
 	background-color: RGBA(140, 250, 225);
+}
+
+
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+a:active {
+  text-decoration: none;
+  color: black;
 }
