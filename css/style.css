@@ -705,6 +705,11 @@ p.materi {
 	cursor: pointer;
 }
 
+/*button sebelum, home, latihan*/
+.marginbuttons{
+	margin-left: 600px;
+}
+
 
 /* halaman kesimpulan */
 .borderkesimpulan {
@@ -716,5 +721,5 @@ p.materi {
 }
 
 .buttonkesimpulan{
-	margin-left: 550px;
+	margin-left: 600px;
 }
