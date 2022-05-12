@@ -8,11 +8,11 @@
 		<link href="css/style.css" rel="stylesheet" />
 		<link href="js/bootstrap.min.css" rel="stylesheet">	
 		<link rel="stylesheet" href="css/stylesidebar.css">
-		<link rel="stylesheet" href="css/stylecerita.css">
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     </head>
-    <body style="background:#1abc9c">
+    <body style="background:#89B5AF">
 	
 	<div class="col-sm-2 sidenav hidden-xs">
 	  	<input type="checkbox" id="check">
@@ -76,106 +76,21 @@
 		}
 	</script>
 	
-		<div class="borderCerita" align="center">
+		<div class="borderQuiz" align="center">
 			<br>
-			
-			<br>
-			<div class="slideshow-container">
-						
-				<div class="mySlides fade">
-					<img class="imgmateri" src="assets/img/cerita/Cerita Ayam/1.png" width="85%">
-				</div>
+			<img class="imgmateri" src="assets/img/Quiz/Darat 2.png" width="31%">
+			<br><br>
+			<a href="assets/file/Latihan Darat 2.pdf"><button class="buttoncetak">Cetak</button></a>
+		</div>
+		
+		<br>
+		<div>
+			<p class="marginbutton">
+			<a href="Latihan Darat 2.html"><button class="buttonSebelumMateri">&laquo;</button></a>
+			<a href="assets/file/Latihan Darat 2.pdf"><button class="buttonLatihan">Kesimpulan</button></a>
+			<a href="Home.html"><button class="buttonSesudahMateri">&raquo;</button></a> 
+			</p>
+		</div>
 
-				<div class="mySlides fade">
-					<img class="imgmateri" src="assets/img/cerita/Cerita Ayam/2.png" width="85%">
-				</div>
-
-				<div class="mySlides fade">
-					<img class="imgmateri" src="assets/img/cerita/Cerita Ayam/3.png" width="85%">
-				</div>
-				
-				<div class="mySlides fade">
-					<img class="imgmateri" src="assets/img/cerita/Cerita Ayam/4.png" width="85%">
-				</div>
-				
-				<div class="mySlides fade">
-					<img class="imgmateri" src="assets/img/cerita/Cerita Ayam/5.png" width="85%">
-				</div>
-				
-				<div class="mySlides fade">
-					<img class="imgmateri" src="assets/img/cerita/Cerita Ayam/6.png" width="85%">
-				</div>
-				
-				<div class="mySlides fade">
-					<img class="imgmateri" src="assets/img/cerita/Cerita Ayam/7.png" width="85%">
-				</div>
-				
-				<div class="mySlides fade">
-					<img class="imgmateri" src="assets/img/cerita/Cerita Ayam/8.png" width="85%">
-				</div>
-				
-				<div class="mySlides fade">
-					<img class="imgmateri" src="assets/img/cerita/Cerita Ayam/9.png" width="85%">
-				</div>
-				
-				<div class="mySlides fade">
-					<img class="imgmateri" src="assets/img/cerita/Cerita Ayam/10.png" width="85%">
-				</div>
-				
-				<div class="mySlides fade">
-					<img class="imgmateri" src="assets/img/cerita/Cerita Ayam/11.png" width="85%">
-				</div>
-				
-				<div class="mySlides fade">
-					<img class="imgmateri" src="assets/img/cerita/Cerita Ayam/12.png" width="85%">
-				</div>
-				
-				<div class="mySlides fade">
-					<img class="imgmateri" src="assets/img/cerita/Cerita Ayam/13.png" width="85%">
-				</div>
-				
-				<div class="mySlides fade">
-					<img class="imgmateri" src="assets/img/cerita/Cerita Ayam/14.png" width="85%">
-				</div>
-				
-				<div class="mySlides fade">
-					<img class="imgmateri" src="assets/img/cerita/Cerita Ayam/15.png" width="85%">
-				</div>
-				
-				<div class="mySlides fade">
-					<img class="imgmateri" src="assets/img/cerita/Cerita Ayam/16.png" width="85%">
-				</div>
-
-				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-				<a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-			</div>
-			<br>
-			<script>
-				var slideIndex = 1;
-				showSlides(slideIndex);
-
-				function plusSlides(n) {
-					showSlides(slideIndex += n);
-				}
-
-				function currentSlide(n) {
-					showSlides(slideIndex = n);
-				}
-
-				function showSlides(n) {
-					var i;
-					var slides = document.getElementsByClassName("mySlides");
-					if (n > slides.length) {slideIndex = 1}    
-					if (n < 1) {slideIndex = slides.length}
-					for (i = 0; i < slides.length; i++) {
-						slides[i].style.display = "none";  
-					}
-					slides[slideIndex-1].style.display = "block";  
-					dots[slideIndex-1].className += " active";
-				}
-			</script>
-			
-			<br>
     </body>
 </html>
