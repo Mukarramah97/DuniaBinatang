@@ -6,27 +6,47 @@
 }
 
 /* halaman home */
-.tengah{	/* posisikan letak */
-	margin:10% auto;
-	position: relative;
-}
 
 .deals-container{
-	margin: 40px 30px 20px 8%;
+	margin: auto;
 	width: 90%;
 	text-align:center;
 }
 
  .deal{
-	padding: 60px;
 	font-size: 20px;
 	font-weight: bold;
 	color: white;
 	display: inline-block;
-	margin: 20px;
-	max-width: 25%;
-
+	max-width: 55%;
+	margin-right:90%;
  }
+ 
+ .imghome {
+	height: auto;
+	width: 20%;
+}
+
+m.container {
+  position: relative;
+  width: 30%;
+  height: auto;
+}
+
+.container .imghome {
+  position: absolute;
+  border: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+.container .imghome a {
+    float: none;
+    display: block;
+	width:100%;
+	height:auto;
+  }
+}
 
 /* jarak dengan gambar */
 .h1_home{
@@ -607,11 +627,6 @@ p.materi {
 	height: 60px;
 }
 
-
-.imghome {
-	height: 170%;
-	width: 170%;
-}
 
 .paddinghome{
 	padding-right:150px;
