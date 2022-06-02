@@ -1,16 +1,14 @@
-.sidebar ul a{
-	transition: all 1s ease;
-}
 
-.sidebar {
-    position: fixed;
-    transition: all 0.5s ease;
-	background: rgba(255, 255, 255, 0.1);
-	box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
-	height:95%;
-	width:15%;
-	padding-right:20px;
-	overflow-y: auto;
+/* Fixed sidenav, full height */
+.sidenav {
+  width: 8%;
+  height:100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  padding-top: 5px;
 }
 
 ::-webkit-scrollbar {
@@ -25,133 +23,38 @@
   background-color: gray;
 }
 
-
-ul li:hover a {
-    padding-left: 40px;
-}
-
-#check {
-    display: none;
-}
-
-label #btn {
-    position: absolute;
-    cursor: pointer;
-    border-radius: 3px;
-}
-
-label #open {
-    position: absolute;
-    cursor: pointer;
-    border-radius: 1px;
-    font-size: 30px;
-}
-
-label #open {
-    left: -50px;
-    top: 10;
-    padding: 6px 12px;
-    transition: all 0s ease;
-}
-
-label #btn {
-    z-index: 1111;
-    left: 170px;
-    top: 15px;
-    font-size: 20px;
-    color: #000000;
-    padding: 9px 9px;
-    transition: all 0s ease;
-}
-
-#check:checked~.sidebar {
-    left:-250px;
-}
-
-#check:checked~label #open {
-    left:30px;
-    font-size: 20px;
-}
-
-#check:checked~label #btn {
-    left:-195px;
-}
-
-.buttonutama {
-	background-color: #FDD7AA;
-	color: black;
-	cursor: pointer;
-	padding: 10px;
-	width: 100%;
-	border: 1px solid #AD8B73;
-	text-align: left;
-	outline: none;
-	font-size: 15px;
-	transition: 0.4s;
-}
-
-.activ, .buttonutama:hover {
-	background-color: white; 
-}
-
-.isimateri {
-	background-color: #F4BBBB;
-	color: black;
-	cursor: pointer;
-	padding: 10px;
-	width: 100%;
-	border: 1px solid #AD8B73;
-	text-align: left;
-	outline: none;
-	font-size: 15px;
-	transition: 0.4s;
-}
-
-.activ, .isimateri:hover {
-	background-color: white; 
-}
-
-.pageaktif{
-	background-color: #CEAB93; 
-}
-
-.tutupisimateri {
-	color: black;
-	padding: 0 25px;
-	display: none;
-	overflow: hidden;
-}
-			
-.buttonsidebar {
-	padding: 10px;
-	border: 1px solid #AD8B73;
-	color: black;
-	background-color: #C2B8A3;
-}
-			
-.btnsidebar {
-	border: 1px solid #AD8B73;
-	color: black;
-	background-color: RGBA(140, 250, 225);
-}
-
-
-a:link {
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+  padding: 0 0 0 0;
   text-decoration: none;
-  color: black;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  cursor: pointer;
+  outline: none;
 }
 
-a:visited {
-  text-decoration: none;
-  color: black;
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  padding-left: 8px;
 }
 
-a:hover {
-  text-decoration: none;
-  color: black;
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
 }
 
-a:active {
-  text-decoration: none;
-  color: black;
+/* Some media queries for responsiveness */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
+
+.jarak{
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+

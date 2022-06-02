@@ -12,67 +12,43 @@
     </head>
     <body style="background:#4FBDBA">
 	
-	<div class="col-sm-2 sidenav hidden-xs">
-	  	<input type="checkbox" id="check">
-			<label for="check">
-				<i class="fas fa-bars" id="btn"><img src="assets/img/ikon/sidebar.png" height="30" width="30" alt="Avatar"></i>
-				<i class="fa fa-arrow-right" id="open"><img src="assets/img/ikon/sidebar.png" height="30" width="30" alt="Avatar"></i>
-			</label>
-
-		<div class="sidebar" style="padding-left:20px;">
-			<br>
-			<h6 align="center"> <img src="assets/img/avataars.png" class="img-circle" height="90px" width="90px" alt="Avatar"></h6>
-			<ul class="nav nav-pills nav-stacked">
-				<li class="pageaktif buttonutama"><a href="home.html">Home</a></li>
-				<li class="buttonutama"><a href="TujuanPembelajaran.html">KI & KD</a></li>
-				<li class="buttonutama"><a href="Tempat Hidup.html">Materi</a></li>
-				<li class="isimateri">Darat</li>
-					<div class="tutupisimateri nav-stacked">
-						<li class="buttonsidebar"><a href="Materi ayam.html">Ayam</a></li>
-						<li class="buttonsidebar"><a href="Materi sapi.html">Sapi</a></li>
-						<li class="buttonsidebar"><a href="Materi kucing.html">Kucing</a></li>
-						<li class="buttonsidebar"><a href="Materi anjing.html">Anjing</a></li>
-						<li class="buttonsidebar"><a href="cerita ayam.html">Cerita</a></li>
-						<li class="buttonsidebar"><a href="Lagu Darat.html">Lagu</a></li>
-					</div>
-				<li class="isimateri">Air</li>
-					<div class="tutupisimateri nav-stacked">
-						<li class="buttonsidebar"><a href="Materi ikan.html">Ikan</a></li>
-						<li class="buttonsidebar"><a href="Materi paus.html">Paus</a></li>
-						<li class="buttonsidebar"><a href="Materi lumba-lumba.html">Lumba-lumba</a></li>
-						<li class="buttonsidebar"><a href="Materi hiu.html">Hiu</a></li>
-						<li class="buttonsidebar"><a href="cerita ikan.html">Cerita</a></li>
-						<li class="buttonsidebar"><a href="Lagu Air.html">Lagu</a></li>
-					</div>
-				<li class="isimateri">Udara</li>
-					<div class="tutupisimateri nav-stacked">
-						<li class="buttonsidebar"><a href="Materi kupu2.html">Kupu-kupu</a></li>
-						<li class="buttonsidebar"><a href="Materi lebah.html">Lebah</a></li>
-						<li class="buttonsidebar"><a href="Materi capung.html">Capung</a></li>
-						<li class="buttonsidebar"><a href="Materi burung.html">Burung</a></li>
-						<li class="buttonsidebar"><a href="cerita lebah.html">Cerita</a></li>
-						<li class="buttonsidebar"><a href="Lagu Udara.html">Lagu</a></li>
-					</div>
-				<li class="buttonutama"><a href="info.html">Info</a></li>
-			</ul>
+<div class="sidenav">
+  <button class="dropdown-btn"><img src="assets/img/sidebar/menu.png" alt="menu" style="width:100%">
+  </button>
+  <div class="dropdown-container">
+    <a href="home.html"><img src="assets/img/sidebar/beranda.png" alt="beranda" style="width:80%" class="jarak"></a>
+	<a href="TujuanPembelajaran.html"><img src="assets/img/sidebar/KI KD.png" alt="KI KD" style="width:80%" class="jarak"></a>
+	<a class="dropdown-btn"><img src="assets/img/sidebar/darat.png" alt="darat" style="width:80%" class="jarak"></a>
+		<div class="dropdown-container">
+			<a href="Materi ayam.html"> <img src="assets/img/sidebar/ayam.png" alt="ayam" style="width:70%" class="jarak"></a>
+			<a href="Materi sapi.html"> <img src="assets/img/sidebar/sapi.png" alt="sapi" style="width:70%" class="jarak"></a>
+			<a href="Materi kucing.html"> <img src="assets/img/sidebar/kucing.png" alt="kucing" style="width:70%" class="jarak"></a>
+			<a href="Materi anjing.html"> <img src="assets/img/sidebar/anjing.png" alt="anjing" style="width:70%" class="jarak"></a>
+			<a href="cerita ayam.html"> <img src="assets/img/sidebar/cerita.png" alt="cerita" style="width:70%" class="jarak"></a>
+			<a href="Lagu Darat.html"> <img src="assets/img/sidebar/lagu.png" alt="lagu" style="width:70%" class="jarak"></a>
 		</div>
-    </div>
-	
-	<script>
-		var acc = document.getElementsByClassName("isimateri");
-		var i;
-		for (i = 0; i < acc.length; i++) {
-			acc[i].addEventListener("click", function() {
-				this.classList.toggle("active");
-				var panel = this.nextElementSibling;
-				if (panel.style.display === "block") {
-					panel.style.display = "none";
-				} else {
-					panel.style.display = "block";
-				}
-			});
-		}
-	</script>
+    <a class="dropdown-btn"><img src="assets/img/sidebar/air.png" alt="air" style="width:80%" class="jarak"></a>
+		<div class="dropdown-container">
+			<a href="Materi ikan.html"> <img src="assets/img/sidebar/ikan.png" alt="ikan" style="width:70%" class="jarak"></a>
+			<a href="Materi paus.html"> <img src="assets/img/sidebar/paus.png" alt="paus" style="width:70%" class="jarak"></a>
+			<a href="Materi lumba-lumba.html"> <img src="assets/img/sidebar/lumba-lumba.png" alt="lumba-lumba" style="width:70%"  class="jarak"></a>
+			<a href="Materi hiu.html"> <img src="assets/img/sidebar/hiu.png" alt="hiu" style="width:70%" class="jarak"></a>
+			<a href="cerita ikan.html"> <img src="assets/img/sidebar/cerita.png" alt="cerita" style="width:70%" class="jarak"></a>
+			<a href="Lagu Air.html"> <img src="assets/img/sidebar/lagu.png" alt="lagu" style="width:70%" class="jarak"></a>
+		</div>
+    <a class="dropdown-btn"><img src="assets/img/sidebar/udara.png" alt="udara" style="width:80%" class="jarak"></a>
+		<div class="dropdown-container">
+			<a href="Materi lebah.html"> <img src="assets/img/sidebar/lebah.png" alt="lebah" style="width:70%" class="jarak"></a>
+			<a href="Materi kupu2.html"> <img src="assets/img/sidebar/kupu-kupu.png" alt="kupu-kupu" style="width:70%" class="jarak"></a>
+			<a href="Materi capung.html"> <img src="assets/img/sidebar/capung.png" alt="capung" style="width:70%" class="jarak"></a>
+			<a href="Materi burung.html"> <img src="assets/img/sidebar/burung.png" alt="burung" style="width:70%" class="jarak"></a>
+			<a href="cerita lebah.html"> <img src="assets/img/sidebar/cerita.png" alt="cerita" style="width:70%" class="jarak"></a>
+			<a href="Lagu Udara.html"> <img src="assets/img/sidebar/lagu.png" alt="lagu" style="width:70%" class="jarak"></a>
+		</div>
+	<a href="info.html"><img src="assets/img/sidebar/info.png" alt="info" style="width:80%"  class="jarak"></a>
+  </div>
+</div>
+ <script src="js/sidebar.js"></script>
 	
 		<h1 align="center">Menentukkan Binatang Besar dan Kecil</h1>
 		<div class="borderLatihan">

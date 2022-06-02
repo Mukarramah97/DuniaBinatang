@@ -21,67 +21,43 @@
 
 <body style="background:#1abc9c">
 
-	<div class="col-sm-2 sidenav hidden-xs">
-	  	<input type="checkbox" id="check">
-			<label for="check">
-				<i class="fas fa-bars" id="btn"><img src="assets/img/ikon/sidebar.png" height="30" width="30" alt="Avatar"></i>
-				<i class="fa fa-arrow-right" id="open"><img src="assets/img/ikon/sidebar.png" height="30" width="30" alt="Avatar"></i>
-			</label>
-
-		<div class="sidebar" style="padding-left:20px;">
-			<br>
-			<h6 align="center"> <img src="assets/img/avataars.png" class="img-circle" height="90px" width="90px" alt="Avatar"></h6>
-			<ul class="nav nav-pills nav-stacked">
-				<li class="pageaktif buttonutama"><a href="home.html">Home</a></li>
-				<li class="buttonutama"><a href="TujuanPembelajaran.html">KI & KD</a></li>
-				<li class="buttonutama"><a href="Tempat Hidup.html">Materi</a></li>
-				<li class="isimateri">Darat</li>
-					<div class="tutupisimateri nav-stacked">
-						<li class="buttonsidebar"><a href="Materi ayam.html">Ayam</a></li>
-						<li class="buttonsidebar"><a href="Materi sapi.html">Sapi</a></li>
-						<li class="buttonsidebar"><a href="Materi kucing.html">Kucing</a></li>
-						<li class="buttonsidebar"><a href="Materi anjing.html">Anjing</a></li>
-						<li class="buttonsidebar"><a href="cerita ayam.html">Cerita</a></li>
-						<li class="buttonsidebar"><a href="Lagu Darat.html">Lagu</a></li>
-					</div>
-				<li class="isimateri">Air</li>
-					<div class="tutupisimateri nav-stacked">
-						<li class="buttonsidebar"><a href="Materi ikan.html">Ikan</a></li>
-						<li class="buttonsidebar"><a href="Materi paus.html">Paus</a></li>
-						<li class="buttonsidebar"><a href="Materi lumba-lumba.html">Lumba-lumba</a></li>
-						<li class="buttonsidebar"><a href="Materi hiu.html">Hiu</a></li>
-						<li class="buttonsidebar"><a href="cerita ikan.html">Cerita</a></li>
-						<li class="buttonsidebar"><a href="Lagu Air.html">Lagu</a></li>
-					</div>
-				<li class="isimateri">Udara</li>
-					<div class="tutupisimateri nav-stacked">
-						<li class="buttonsidebar"><a href="Materi kupu2.html">Kupu-kupu</a></li>
-						<li class="buttonsidebar"><a href="Materi lebah.html">Lebah</a></li>
-						<li class="buttonsidebar"><a href="Materi capung.html">Capung</a></li>
-						<li class="buttonsidebar"><a href="Materi burung.html">Burung</a></li>
-						<li class="buttonsidebar"><a href="cerita lebah.html">Cerita</a></li>
-						<li class="buttonsidebar"><a href="Lagu Udara.html">Lagu</a></li>
-					</div>
-				<li class="buttonutama"><a href="info.html">Info</a></li>
-			</ul>
+<div class="sidenav">
+  <button class="dropdown-btn"><img src="assets/img/sidebar/menu.png" alt="menu" style="width:100%">
+  </button>
+  <div class="dropdown-container">
+    <a href="home.html"><img src="assets/img/sidebar/beranda.png" alt="beranda" style="width:80%" class="jarak"></a>
+	<a href="TujuanPembelajaran.html"><img src="assets/img/sidebar/KI KD.png" alt="KI KD" style="width:80%" class="jarak"></a>
+	<a class="dropdown-btn"><img src="assets/img/sidebar/darat.png" alt="darat" style="width:80%" class="jarak"></a>
+		<div class="dropdown-container">
+			<a href="Materi ayam.html"> <img src="assets/img/sidebar/ayam.png" alt="ayam" style="width:70%" class="jarak"></a>
+			<a href="Materi sapi.html"> <img src="assets/img/sidebar/sapi.png" alt="sapi" style="width:70%" class="jarak"></a>
+			<a href="Materi kucing.html"> <img src="assets/img/sidebar/kucing.png" alt="kucing" style="width:70%" class="jarak"></a>
+			<a href="Materi anjing.html"> <img src="assets/img/sidebar/anjing.png" alt="anjing" style="width:70%" class="jarak"></a>
+			<a href="cerita ayam.html"> <img src="assets/img/sidebar/cerita.png" alt="cerita" style="width:70%" class="jarak"></a>
+			<a href="Lagu Darat.html"> <img src="assets/img/sidebar/lagu.png" alt="lagu" style="width:70%" class="jarak"></a>
 		</div>
-    </div>
-	
-	<script>
-		var acc = document.getElementsByClassName("isimateri");
-		var i;
-		for (i = 0; i < acc.length; i++) {
-			acc[i].addEventListener("click", function() {
-				this.classList.toggle("activ");
-				var panel = this.nextElementSibling;
-				if (panel.style.display === "block") {
-					panel.style.display = "none";
-				} else {
-					panel.style.display = "block";
-				}
-			});
-		}
-	</script>
+    <a class="dropdown-btn"><img src="assets/img/sidebar/air.png" alt="air" style="width:80%" class="jarak"></a>
+		<div class="dropdown-container">
+			<a href="Materi ikan.html"> <img src="assets/img/sidebar/ikan.png" alt="ikan" style="width:70%" class="jarak"></a>
+			<a href="Materi paus.html"> <img src="assets/img/sidebar/paus.png" alt="paus" style="width:70%" class="jarak"></a>
+			<a href="Materi lumba-lumba.html"> <img src="assets/img/sidebar/lumba-lumba.png" alt="lumba-lumba" style="width:70%"  class="jarak"></a>
+			<a href="Materi hiu.html"> <img src="assets/img/sidebar/hiu.png" alt="hiu" style="width:70%" class="jarak"></a>
+			<a href="cerita ikan.html"> <img src="assets/img/sidebar/cerita.png" alt="cerita" style="width:70%" class="jarak"></a>
+			<a href="Lagu Air.html"> <img src="assets/img/sidebar/lagu.png" alt="lagu" style="width:70%" class="jarak"></a>
+		</div>
+    <a class="dropdown-btn"><img src="assets/img/sidebar/udara.png" alt="udara" style="width:80%" class="jarak"></a>
+		<div class="dropdown-container">
+			<a href="Materi lebah.html"> <img src="assets/img/sidebar/lebah.png" alt="lebah" style="width:70%" class="jarak"></a>
+			<a href="Materi kupu2.html"> <img src="assets/img/sidebar/kupu-kupu.png" alt="kupu-kupu" style="width:70%" class="jarak"></a>
+			<a href="Materi capung.html"> <img src="assets/img/sidebar/capung.png" alt="capung" style="width:70%" class="jarak"></a>
+			<a href="Materi burung.html"> <img src="assets/img/sidebar/burung.png" alt="burung" style="width:70%" class="jarak"></a>
+			<a href="cerita lebah.html"> <img src="assets/img/sidebar/cerita.png" alt="cerita" style="width:70%" class="jarak"></a>
+			<a href="Lagu Udara.html"> <img src="assets/img/sidebar/lagu.png" alt="lagu" style="width:70%" class="jarak"></a>
+		</div>
+	<a href="info.html"><img src="assets/img/sidebar/info.png" alt="info" style="width:80%"  class="jarak"></a>
+  </div>
+</div>
+ <script src="js/sidebar.js"></script>
 
   <main id="main">
 
@@ -195,44 +171,44 @@
 					<h1 align="center" style="font-family:Comic Sans MS; color:black;">Mengenal Angka</h1>
 					<table>
 						<td width="150"> 
-							<button class="button_123 huruf sapi_123 link_sapi angka_123 belajar_angka" onclick="belajar_angka(event, 'angka1'); angka_sapi(event, 'sapi1');" style="background-color: RGB(23,47,223);">6</button> <br><br>
-							<button class="button_123 huruf sapi_123 link_sapi angka_123 belajar_angka" onclick="belajar_angka(event, 'angka2'); angka_sapi(event, 'sapi2');" style="background-color: RGB(197,90,17);">7</button> <br><br>
-							<button class="button_123 huruf sapi_123 link_sapi angka_123 belajar_angka" onclick="belajar_angka(event, 'angka3'); angka_sapi(event, 'sapi3');" style="background-color: RGB(237,89,241);">8</button> <br><br>
-							<button class="button_123 huruf sapi_123 link_sapi angka_123 belajar_angka" onclick="belajar_angka(event, 'angka4'); angka_sapi(event, 'sapi4');" style="background-color: RGB(80,181,29);">9</button> <br><br>
-							<button class="button_1234 huruf sapi_123 link_sapi angka_123 belajar_angka" onclick="belajar_angka(event, 'angka5'); angka_sapi(event, 'sapi5');" style="background-color: RGB(240,21,16);">10</button> <br>
+							<button class="button_123 huruf sapi_123 link_sapi angka_123 belajar_angka" onclick="belajar_angka(event, 'angka1'); angka_sapi(event, 'sapi1');" style="background-color: RGB(23,47,223);">1</button> <br><br>
+							<button class="button_123 huruf sapi_123 link_sapi angka_123 belajar_angka" onclick="belajar_angka(event, 'angka2'); angka_sapi(event, 'sapi2');" style="background-color: RGB(197,90,17);">2</button> <br><br>
+							<button class="button_123 huruf sapi_123 link_sapi angka_123 belajar_angka" onclick="belajar_angka(event, 'angka3'); angka_sapi(event, 'sapi3');" style="background-color: RGB(237,89,241);">3</button> <br><br>
+							<button class="button_123 huruf sapi_123 link_sapi angka_123 belajar_angka" onclick="belajar_angka(event, 'angka4'); angka_sapi(event, 'sapi4');" style="background-color: RGB(80,181,29);">4</button> <br><br>
+							<button class="button_123 huruf sapi_123 link_sapi angka_123 belajar_angka" onclick="belajar_angka(event, 'angka5'); angka_sapi(event, 'sapi5');" style="background-color: RGB(240,21,16);">5</button> <br>
 						</td>
 						<td width="300">
-							<div id="angka1" class="konten_angka tabcontent">
-								<img src="assets/img/angka/nomor/6.png" width="300px" height="300px"> 
+							<div id="angka1" class="konten_angka">
+								<img src="assets/img/angka/nomor/1.png" width="300px" height="300px"> 
 							</div>
 							<div id="angka2" class="konten_angka tabcontent">
-								<img src="assets/img/angka/nomor/7.png" width="300px" height="300px"> 
+								<img src="assets/img/angka/nomor/2.png" width="300px" height="300px"> 
 							</div>
 							<div id="angka3" class="konten_angka tabcontent">
-								<img src="assets/img/angka/nomor/8.png" width="300px" height="300px"> 
+								<img src="assets/img/angka/nomor/3.png" width="300px" height="300px"> 
 							</div>
 							<div id="angka4" class="konten_angka tabcontent">
-								<img src="assets/img/angka/nomor/9.png" width="300px" height="300px"> 
+								<img src="assets/img/angka/nomor/4.png" width="300px" height="300px"> 
 							</div>
 							<div id="angka5" class="konten_angka tabcontent">
-								<img src="assets/img/angka/nomor/10.png" width="300px" height="300px"> 
+								<img src="assets/img/angka/nomor/5.png" width="300px" height="300px"> 
 							</div>
 						</td>
 						<td width="300">  
 							<div id="sapi1" class="konten_sapi tabcontent">
-								<img src="assets/img/angka/sapi/sapi6.png" width="500px" height="350px"> 
+								<img src="assets/img/angka/sapi/sapi1.png" width="500px" height="350px"> 
 							</div>
 							<div id="sapi2" class="konten_sapi tabcontent">
-								<img src="assets/img/angka/sapi/sapi7.png" width="600px" height="350px"> 
+								<img src="assets/img/angka/sapi/sapi2.png" width="600px" height="350px"> 
 							</div>
 							<div id="sapi3" class="konten_sapi tabcontent">
-								<img src="assets/img/angka/sapi/sapi8.png" width="600px" height="350px"> 
+								<img src="assets/img/angka/sapi/sapi3.png" width="600px" height="350px"> 
 							</div>
 							<div id="sapi4" class="konten_sapi tabcontent">
-								<img src="assets/img/angka/sapi/sapi9.png" width="600px" height="350px"> 
+								<img src="assets/img/angka/sapi/sapi4.png" width="600px" height="350px"> 
 							</div>
 							<div id="sapi5" class="konten_sapi tabcontent">
-								<img src="assets/img/angka/sapi/sapi10.png" width="600px" height="370px"> 
+								<img src="assets/img/angka/sapi/sapi5.png" width="600px" height="370px"> 
 							</div>
 						</td>
 					</table>

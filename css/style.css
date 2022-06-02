@@ -7,6 +7,14 @@
 
 /* halaman home */
 
+.judul{
+	text-align:center;
+	font-size: 50px;
+	color: black;
+	font-family: "Comic Sans MS";
+	font-weight: bold;
+}
+
 .deals-container{
 	margin: auto;
 	width: 90%;
@@ -683,8 +691,8 @@ p.materi {
 }
 
 .mulaihome{
-	padding-left:100px; 
-	padding-top:110px;
+	padding-left:30px; 
+	padding-top:160px;
 	cursor: pointer;
 }
 
@@ -705,6 +713,8 @@ p.materi {
   border-color: white;
   margin-left: 200px;
   margin-right: 200px;
+  padding-left:30px;
+  padding-right:30px;
 }
 
 .buttoncetak {
@@ -737,4 +747,21 @@ p.materi {
 
 .buttonkesimpulan{
 	margin-left: 600px;
+}
+
+
+.jarakmulai{
+  position: absolute;
+  top: 2%;
+  left: 80%;
+  border: none;
+  cursor: pointer;
+}
+
+.jarakmulai1{
+  position: absolute;
+  top: 2%;
+  left: 75%;
+  border: none;
+  cursor: pointer;
 }
